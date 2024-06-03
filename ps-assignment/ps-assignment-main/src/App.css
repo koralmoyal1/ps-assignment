@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-banner {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  border: 1px solid black; 
+}
+
+.main-banner-title {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.movie-thumbnails-container {
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.movie-thumbnails {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+
+.movie-thumbnails img {
+  flex: 1;
+  width: 100%;
+  max-width: calc(100% / 3 - 20px);
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 10px solid white;
+}
+
+.movie-thumbnails img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  font-size: large;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d4ef8b;
+}
+
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+}

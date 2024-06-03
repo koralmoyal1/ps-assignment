@@ -1,0 +1,9 @@
+
+
+Errors I found:
+
+1. Movies button:   
+I ran the app on localhost:3000 and clicked on each movie button, but nothing happened. I placed a breakpoint in the 'movieitem.js' file at the 'onClick' button line and found that 'onMovieSelect' wasn't receiving any movie data. To fix this, I added the movie object to the method. Then I tried clicking the buttons and it worked correctly, each fetching the relevant movie, displaying the number of episodes, and suggesting liking the movie. This led me to the next issue.
+2. Like button: 
+Clicking the "like" button resulted in an error indicating that the 'onFavoriteToggle' function wasn't declared. I noticed that there was a function named 'handleFavorite' that wasn't being used but seemed appropriate for handling the favorite logic. I defined 'onFavoriteToggle' in the 'app.js' file to call 'handleFavorite' and included 'onFavoriteToggle' in the `movieDetails` object in the return value. After testing the like button again, I confirmed that adding a movie to the favorite list worked. The movie was added to the favorites array upon clicking the like button, and the button changed to "dislike." Clicking "dislike" removed the movie from the favorites array (I opened the localstorage using the devtool and check favorites array).
+
