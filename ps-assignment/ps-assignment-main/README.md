@@ -15,7 +15,7 @@ This React application fetches movies from the Star Wars API (SWAPI) and lets us
 
 2. Navigate to the project directory:
    ```bash
-   cd ps-assignment
+  cd .\ps-assignment\ps-assignment-main\
    ```
 
 3. Install the dependencies:
